@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlogSpace - Modern Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Blog<span>Space</span></div>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button id="themeBtn">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="tag">WELCOME TO BLOGSPACE</p>
+        <h1>Ideas that <span>inspire</span> and stories that matter.</h1>
+        <p>
+          Discover articles about technology, lifestyle, travel,
+          programming and much more.
+        </p>
+        <a href="#blogs" class="hero-btn">Explore Blogs →</a>
+      </div>
+    </section>
+
+    <!-- Search -->
+    <section class="blog-section" id="blogs">
+
+      <div class="section-heading">
+        <div>
+          <p class="tag">OUR ARTICLES</p>
+          <h2>Latest Blogs</h2>
+        </div>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search blogs..."
+        >
+      </div>
+
+      <!-- Categories -->
+      <div class="categories">
+        <button class="category active" data-category="all">All</button>
+        <button class="category" data-category="technology">Technology</button>
+        <button class="category" data-category="programming">Programming</button>
+        <button class="category" data-category="travel">Travel</button>
+        <button class="category" data-category="lifestyle">Lifestyle</button>
+      </div>
+
+      <!-- Blog Cards -->
+      <div class="blog-grid" id="blogGrid">
+
+        <article class="blog-card" data-category="technology">
+          <div class="blog-image tech">💻</div>
+          <div class="blog-content">
+            <span class="category-label">Technology</span>
+            <h3>The Future of Artificial Intelligence</h3>
+            <p>
+              Explore how artificial intelligence is changing
+              the way we work and live.
+            </p>
+            <button class="read-btn"
+              data-title="The Future of Artificial Intelligence"
+              data-text="Artificial intelligence is transforming industries around the world. From healthcare and education to software development and business, AI is becoming an important part of modern life.">
+              Read More →
+            </button>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="programming">
+          <div class="blog-image code">{"</>"}</div>
+          <div class="blog-content">
+            <span class="category-label">Programming</span>
+            <h3>How to Become a Better Developer</h3>
+            <p>
+              Learn practical habits that can help you improve
+              your programming skills.
+            </p>
+            <button class="read-btn"
+              data-title="How to Become a Better Developer"
+              data-text="Becoming a better developer requires consistent practice. Build projects, read documentation, understand fundamentals, review your code and learn from other developers.">
+              Read More →
+            </button>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="travel">
+          <div class="blog-image travel">✈️</div>
+          <div class="blog-content">
+            <span class="category-label">Travel</span>
+            <h3>10 Places You Should Visit</h3>
+            <p>
+              Discover beautiful destinations and create
+              unforgettable travel experiences.
+            </p>
+            <button class="read-btn"
+              data-title="10 Places You Should Visit"
+              data-text="Travel gives us an opportunity to experience different cultures, food and landscapes. Planning your trip carefully can help you make the most of every destination.">
+              Read More →
+            </button>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="lifestyle">
+          <div class="blog-image lifestyle">🌱</div>
+          <div class="blog-content">
+            <span class="category-label">Lifestyle</span>
+            <h3>Simple Habits for a Better Life</h3>
+            <p>
+              Small daily habits can make a big difference
+              in your productivity and happiness.
+            </p>
+            <button class="read-btn"
+              data-title="Simple Habits for a Better Life"
+              data-text="Creating a healthy routine can improve your everyday life. Focus on getting enough sleep, exercising regularly, learning new things and spending quality time with people you care about.">
+              Read More →
+            </button>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="technology">
+          <div class="blog-image tech">🚀</div>
+          <div class="blog-content">
+            <span class="category-label">Technology</span>
+            <h3>Technology Trends to Watch</h3>
+            <p>
+              A look at some of the technologies shaping
+              the digital world.
+            </p>
+            <button class="read-btn"
+              data-title="Technology Trends to Watch"
+              data-text="Modern technology continues to evolve rapidly. Cloud computing, artificial intelligence, cybersecurity and connected devices are important areas to watch.">
+              Read More →
+            </button>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="programming">
+          <div class="blog-image code">⚡</div>
+          <div class="blog-content">
+            <span class="category-label">Programming</span>
+            <h3>Why JavaScript Is Important</h3>
+            <p>
+              Learn why JavaScript remains one of the most
+              popular web development languages.
+            </p>
+            <button class="read-btn"
+              data-title="Why JavaScript Is Important"
+              data-text="JavaScript powers interactive websites and modern web applications. It works in browsers and can also be used on servers, making it a versatile programming language.">
+              Read More →
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="noResults">No blogs found.</p>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div>
+        <p class="tag">ABOUT US</p>
+        <h2>Sharing knowledge through stories.</h2>
+        <p>
+          BlogSpace is a simple modern blogging platform where
+          readers can discover useful ideas, tutorials and stories.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <h2>BlogSpace</h2>
+    <p>Learn. Create. Share.</p>
+    <p>© 2026 BlogSpace. All rights reserved.</p>
+  </footer>
+
+  <!-- Read More Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="close" id="closeModal">&times;</button>
+      <span class="category-label">BLOG ARTICLE</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
